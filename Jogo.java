@@ -1,6 +1,6 @@
 import java.util.Random; // Importa a classe Random para gerar números aleatórios
 
-public class jogo { // Define a classe principal com o nome "JogoDeDados"
+public class Jogo { // Define a classe principal com o nome "JogoDeDados"
     public static void main(String[] args) { // Método principal onde o programa começa
         Random random = new Random(); // Cria um objeto "random" da classe Random
 
