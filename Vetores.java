@@ -17,7 +17,12 @@ public class Vetores {
     }
 
     public static void inserirOrdenado(double[] v, int pos, double x) {
-
+        int i = pos;
+        while(i > 0 && v [i-1] > x){
+            v[i] = v[i-1];
+            i-=1;
+        }
+        v[i] = x;
     }
 
     public static void digitacaoNotas(double[] v) {
@@ -27,7 +32,7 @@ public class Vetores {
             nota = input.nextDouble();
             inserirOrdenado(v, i, nota);
         }
-    }
+     }
 
     public static void impressaoNotas(double[] v) {
         System.out.println("\nNotas Digitadas:");
@@ -58,7 +63,7 @@ public class Vetores {
         System.out.print("\nDigite uma nota a ser pesquisada: ");
         nota = input.nextDouble();
         while (nota >= 0.0) {
-            pos = busca(notas, nota);
+            pos = buscaMelhorada(notas, nota);
             if (pos != -1) {
                 System.out.println("A nota " + nota +
                         " foi encontrada na " + (pos + 1) + "ª posição");
@@ -70,11 +75,13 @@ public class Vetores {
         }
     }
 
-    public static int busca(double[] v, double x) {
-        for (int i = 0; i < v.length; i += 1) {
-            if (v[i] == x) {
-                return i;
-            }
+    public static int buscaMelhorada(double[] v, double x) {
+        int i = 0;
+        while (i > v.length && v[i] < x) {
+            i += 1;
+        }
+        if(i < v.length && v[i] == x){
+            return i;
         }
         return -1;
     }
