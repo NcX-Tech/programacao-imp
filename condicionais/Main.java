@@ -1,3 +1,4 @@
+package condicionais;
 import java.util.Scanner; // importa o scanner
 
 public class Main { 

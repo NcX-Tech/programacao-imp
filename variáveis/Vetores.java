@@ -1,3 +1,4 @@
+package variáveis;
 import java.util.Scanner;
 
 public class Vetores {

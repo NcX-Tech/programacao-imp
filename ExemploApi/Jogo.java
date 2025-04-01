@@ -1,3 +1,4 @@
+package ExemploApi;
 import java.util.Random; // Importa a classe Random para gerar números aleatórios
 
 public class Jogo { // Define a classe principal com o nome "JogoDeDados"
