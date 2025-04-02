@@ -1,9 +1,12 @@
+package vetores;
+
 import java.util.Random; //importa o ramdom
 
 public class Exercício { //define que a classe será publica
     public static void main(String[] args) {
         int[] vetor = new int[1000]; //define o comprimento do vetor
         preencher1(vetor);
+        preencher2(vetor);
         imprimir(vetor);
     }
     
@@ -31,6 +34,11 @@ public class Exercício { //define que a classe será publica
 
     }
     
+    public static void preencher2(int[] v) {
+        
+    }
+
+
 }
 
 
