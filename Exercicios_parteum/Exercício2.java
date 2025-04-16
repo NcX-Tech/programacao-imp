@@ -1,3 +1,4 @@
+package Exercicios_parteum;
 import java.util.Random;
 
 public class Exercício2 {
