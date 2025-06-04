@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 record Aluno(String nome, String matricula, double mediaFinal) {}
 
-public class Main {
+public class Classe_alunos {
     public static void main(String[] args) {
         var alunos = new ArrayList<Aluno>();
         var scanner = new Scanner(System.in);
